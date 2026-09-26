@@ -1,0 +1,24 @@
+{
+  "name": "paeonia-guardrail",
+  "version": "0.1.20",
+  "private": true,
+  "description": "护栏：动手前拦（只拦几乎必然失败的命令）+ 坑清单关键词查询 + 熔断。与 dsh-plan-anchor 并列、零共享。",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": ["lib", "cordis.patch.yml"],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": "^0.1.0-rc.6",
+    "@deepseek-ai/schemastery": "^3.18.1"
+  }
+}
