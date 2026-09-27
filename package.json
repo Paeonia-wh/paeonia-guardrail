@@ -1,6 +1,6 @@
 {
   "name": "paeonia-guardrail",
-  "version": "0.1.39",
+  "version": "0.1.50",
   "private": true,
   "description": "护栏：动手前拦（只拦几乎必然失败的命令）+ 坑清单关键词查询 + 熔断。与 dsh-plan-anchor 并列、零共享。",
   "type": "module",
